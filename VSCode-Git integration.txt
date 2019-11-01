@@ -1,0 +1,4 @@
+Установить пограмму https://git-scm.com/download/win
+
+
+https://github.com/Vova-Nik/Silent-Bob
