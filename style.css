@@ -1,0 +1,30 @@
+.age{
+    padding-right: 20px;
+}
+
+body {
+    color: bisque; 
+    background-color: #0b1b01
+}
+label{
+    padding: 24px;
+    margin: 24px;
+}
+input{
+    margin: 16px;
+}
+
+.lorem{
+    background-color: #020222;
+}
+
+p{
+    background-color: #444444;
+    padding: 8px;
+    margin: 16px;
+}
+
+.parag1{
+    background-color: #3d0505;
+    border-radius: 8px;
+}

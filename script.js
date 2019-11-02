@@ -1,48 +1,33 @@
 console.clear();
 console.log("script loaded");
-console.log("-1/0 = " + -1/0);
 
-let myDiv = document.querySelector("#test");
-myDiv.innerHTML = 'nnn ';
-myDiv.innerHTML += '\n0';
-//  myDiv.innerHTML += Boolean(null<=0);
-let i = 3;
+let btn = document.querySelector('#button1');
 
-
-function showMessage(from, text = "текст не добавлен") {
-    console.log( from + ": " + text );
-  }
-  
-  // showMessage("ANT"); // Аня: текст не добавлен
-  // showMessage("ANT", "ghbdtn");
-
-  const button = document.querySelector('button');
-  const input = document.querySelector('.age');
-  button.onclick = ()=>{
-    let num = + input.value;
-    console.log(num);
-    if(num >= 16)
-      console.log('welcom');
-    else
-      console.log('Bye');
-  }
-
-  let a = 3;
-
-switch (a) {
-  case 3:
-    {
-      console.log ('Маловато' );
-      console.log ('Маловато1' );
-      break;
-    }
-  case 4:
-    console.log( 'В точку!' );
-    break;
-  case 5:
-    console.log( 'Перебор' );
-    break;
-  default:
-    console.log( "Нет таких значений" );
-    
+btn.onclick = () => {
+  console.log(`btn on click call point`);
+  parag.classList.add('parag1');
+  obj.objPrintVars();
 }
+
+let obj = {
+  a: 1,
+  b: 2,
+
+  objPrintVars() {
+    console.log(`objFunc is running a = ${this.a}  b = ${this.b}`);
+  }
+}
+
+console.log(`a = ${this.a}  b = ${this.b}`);
+
+function oneFunc() {
+  console.log(`oneFunc is running`);
+}
+
+const parag = document.querySelector('.lorem');
+parag.style.width = '200px';
+parag.style.backgroundcolor = '#000000';
+parag.innerHTML = `1234`;
+parag.classList.add(contenteditable = 'true');
+console.log(parag.style);
+
