@@ -1,58 +1,18 @@
-console.clear();
-console.log("script loaded");
+a =  new Map();
+a.set(123,"Hi vova");
+a.set(124,"Hi Victor");
 
-let btnOk = document.querySelector('#button1');
+let tempo = 123;
+console.log(a);
+console.log(a.values());
+let b = a.values();
 
-const parag = document.querySelector('.lorem');
-const btnChange = document.querySelector('.changeStyleBtn');
-
-btnChange.onclick = () => {
-  console.log(`btnChange pressed`);
-  if (btnChange.getAttribute('data-state') == 0) {
-    parag.classList.add('parag1');
-    btnChange.setAttribute('data-state', '1');
-    console.log(`Button state = ${btnChange.getAttribute('data-state')}`);
-  }
-  else {
-    parag.classList.remove('parag1');
-    btnChange.setAttribute('data-state', '0');
-    console.log(`Button state = ${btnChange.getAttribute('data-state')}`);
-  }
+for(ind in b)
+{
+  console.log(`${ind} ${b[ind]}`);
 }
 
-parag.style.width = '50%';
-const testDiv = document.querySelector('#testDiv');
-//testDiv.innerHTML = 'Hi Vova <br> Ewrth is OK';
 
-
-
-const mObject = {
-  'a': 'ad vova',
-  'b': 'bd petya',
-  'c': 'cd alla',
-  'd': 'dd Lalisa'
-};
-
-
-for(let k in mObject){
-  console.log('k = ' + mObject[k]);
- }
-
-a = new Set();
-a.add('Vova');
-a.add('Peter');
-a.add('Nik');
-console.log('a = ' + a);
-console.log(a);
-
-aa = Array(a);
-console.log(aa);
-
-
-let o = [4, 5, 12, 200, 1, 0, -2];
-let b = o.map(function(item, index){
-  //console.log(`item = ${item}`);
-  return item;
-})
-console.log(o);
-
+console.log('Hi Vov');
+tempo ++
+tempo = 1000;

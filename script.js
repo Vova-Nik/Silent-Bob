@@ -21,38 +21,19 @@ btnChange.onclick = () => {
 }
 
 parag.style.width = '50%';
-const testDiv = document.querySelector('#testDiv');
-//testDiv.innerHTML = 'Hi Vova <br> Ewrth is OK';
 
-
-
-const mObject = {
-  'a': 'ad vova',
-  'b': 'bd petya',
-  'c': 'cd alla',
-  'd': 'dd Lalisa'
+var person = {
+  name: ['Bob', 'Smith'],
+  age: 32,
+  gender: 'male',
+  interests: ['music', 'skiing'],
+  bio: function() {
+    alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+  },
+  greeting: function() {
+    alert('Hi! I\'m ' + this.name[0] + '.');
+  }
 };
 
 
-for(let k in mObject){
-  console.log('k = ' + mObject[k]);
- }
-
-a = new Set();
-a.add('Vova');
-a.add('Peter');
-a.add('Nik');
-console.log('a = ' + a);
-console.log(a);
-
-aa = Array(a);
-console.log(aa);
-
-
-let o = [4, 5, 12, 200, 1, 0, -2];
-let b = o.map(function(item, index){
-  //console.log(`item = ${item}`);
-  return item;
-})
-console.log(o);
 
