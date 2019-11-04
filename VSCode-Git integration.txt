@@ -1,4 +1,9 @@
-Установить пограмму https://git-scm.com/download/win
+Установить пограмму Git bash  https://git-scm.com/download/win
+
 https://www.youtube.com/watch?v=NTY5VELbCWI
 
 https://github.com/Vova-Nik/Silent-Bob
+
+in "Viev" -> "Command palette"
+Git:commit
+Git:push

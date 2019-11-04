@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div><h3>Test</h3></div>
-    <div id="test"></div>
+  <div>
+    <h2>Test</h2>
+    <h3>contenteditable</h3>
+  </div>
+  <div id="testDiv" class='testDiv'></div>
 
-    <hr>
- 
-   <label><input type="text" class="age">FIELD</label> 
-    <button id='button1'>Ok</button>
-    <label for="button1">Enter age</label>
-
-  <p class = 'lorem'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam at id distinctio culpa inventore iusto consequatur. Aliquid nemo numquam suscipit nisi eveniet, facilis pariatur! Veritatis quos qui voluptatem ducimus. Repellat.</p>
-<button class = 'changeStyleBtn'>Change paragraph</button>
+  <hr>
 
 
-<script src="script.js"></script>
+  <div class='lorem'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam at id distinctio culpa inventore
+    iusto consequatur. Aliquid nemo numquam suscipit nisi eveniet, facilis pariatur! Veritatis quos qui voluptatem
+    ducimus. Repellat.
+  </div>
+  <hr>
+
+
+  <button class='changeStyleBtn' data-state='0'>Change paragraph</button>
+  <label for="changeStyleBtn">Click me</label>
+
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
