@@ -4,36 +4,26 @@ console.log("script loaded");
 let btnOk = document.querySelector('#button1');
 
 const parag = document.querySelector('.lorem');
-const btnChange = document.querySelector('.changeStyleBtn');
-
-btnChange.onclick = () => {
-  console.log(`btnChange pressed`);
-  if (btnChange.getAttribute('data-state') == 0) {
-    parag.classList.add('parag1');
-    btnChange.setAttribute('data-state', '1');
-    console.log(`Button state = ${btnChange.getAttribute('data-state')}`);
-  }
-  else {
-    parag.classList.remove('parag1');
-    btnChange.setAttribute('data-state', '0');
-    console.log(`Button state = ${btnChange.getAttribute('data-state')}`);
-  }
-}
-
 parag.style.width = '50%';
 
-var person = {
-  name: ['Bob', 'Smith'],
-  age: 32,
-  gender: 'male',
-  interests: ['music', 'skiing'],
-  bio: function() {
-    alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
-  },
-  greeting: function() {
-    alert('Hi! I\'m ' + this.name[0] + '.');
-  }
+parag.onmouseenter = () => {
+  console.log('Mouse catched');
+  //parag.style.background = '#3d0505';
+};
+let a = {};
+document.querySelector('.inp1').onkeydown = function(event){
+  console.log('charcode:' + event.charcode);
+  console.log('code:' + event.code);
+  a=event;
+  console.log('event:' + a);
 };
 
-
-
+document.querySelector('.button1').onkeydown = () =>{
+  localStorage.setItem('VVV',124);
+  console.log('Saved');
+}
+document.querySelector('.button2').onkeydown = () =>{
+  console.log('Button2')
+  let vvv = localStorage.sgetItem('VVV');
+  document.querySelector('.inp1').innerHTML = vvv;
+}

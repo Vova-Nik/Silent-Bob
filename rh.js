@@ -12,7 +12,3 @@ for(ind in b)
   console.log(`${ind} ${b[ind]}`);
 }
 
-
-console.log('Hi Vov');
-tempo ++
-tempo = 1000;
