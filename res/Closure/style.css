@@ -6,18 +6,16 @@ body {
     color: bisque; 
     background-color: #0b1b01;
 }
-
+label{
+    padding: 24px;
+    margin: 24px;
+}
 input{
     margin: 16px;
 }
 
 .lorem{
     background-color: #020222;
-    margin: auto;
-}
-
-#head-div{
-    background-color: #080808;
 }
 
 div{
@@ -44,9 +42,8 @@ p::before{
 }
 
 .button-frame{
-    background-color: #221202;
+    background-color: #121202;
     /* display: inline; */
-    user-select: none;
 }
     
 .button{
@@ -59,4 +56,3 @@ p::before{
     display: inline-block;
  
 }
-
